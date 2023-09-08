@@ -1,6 +1,6 @@
-import 'package:default_structure/pages/details/details_page.dart';
 import 'package:default_structure/pages/home/home_page.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
+import '../pages/dashboard/dahboard_page.dart';
 import 'binding.dart';
 
 
@@ -10,18 +10,18 @@ For simplicty i used DetailsPage and didn't make a login page here:
 */
 
 class AppPages {
-  static const String Home = '/home';
-  static const String Details = '/details';
+  static const String DASHBOARD = '/';
+  static const String HOME = '/home';
 
   static var list = [
     GetPage(
-      name: Home,
-      page: () => HomePage(),
+      name: DASHBOARD,
+      page: () => DashboardPage(),
       binding: Binding(),
     ),
     GetPage(
-      name: Details,
-      page: () => DetailsPage(),
+      name: HOME,
+      page: () => HomePage(),
       binding: Binding(),
     ),
   ];

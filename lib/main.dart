@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       /* You can make a function that returns the page that should
       be shown, depending on a boolean, for example if (isAuthenticated)
       show HomePage, else show LoginPage*/
-      initialRoute: AppPages.Home,
+      initialRoute: AppPages.DASHBOARD,
       getPages: AppPages.list,
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
